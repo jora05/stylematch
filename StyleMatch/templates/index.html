@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Top 10 Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">StyleMatch</div>
+        <div class="nav-links">
+            <a href="/">Reset</a>
+        </div>
+    </div>
+    <h2>Welcome, {{ name }}!</h2> 
+    <h3>FIND YOUR STYLE WITH OUR WEB APP</h3>
+    <h3>Scroll and select 10 favorites.    
+    </h3>
+
+
+    <form method="POST" action="/submit-selection" id="selectionForm">
+        <div class="image-grid">
+            {% for image in images %}
+            <div class="image-item">
+                <label>
+                    <input type="checkbox" name="selected_images" value="{{ image }}" class="selection-box">
+                    <img src="{{ image }}" alt="Image">
+                </label>
+            </div>
+            {% endfor %}
+        </div>
+        <p id="warning" style="color: red; display: none;">⚠ You can only select 10 images.</p>
+        <button type="submit">Submit Your Selection</button>
+    </form>
+
+    <script>
+        const checkboxes = document.querySelectorAll('.selection-box');
+        const warning = document.getElementById('warning');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const checked = document.querySelectorAll('.selection-box:checked');
+                if (checked.length > 10) {
+                    checkbox.checked = false;
+                    warning.style.display = 'block';
+                    setTimeout(() => warning.style.display = 'none', 3000);
+                }
+            });
+        });
+    </script>
+ 
+
+</body>
+</html>

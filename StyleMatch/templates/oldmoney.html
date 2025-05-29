@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Top 10 Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">StyleMatch</div>
+        <div class="nav-links">
+            <a href="/pictures">Home (will reset your choices)</a>
+        </div>
+    </div>
+
+    <h3>{{ name }}, your style is:</h3>
+    <h3>💸 OLD MONEY 💸
+        
+    </h3><!-- Featured image (not part of grid) -->
+    <div style="margin: 30px auto; text-align: center;">
+        <img src="{{ url_for('static', filename='Business/6ac62ee7-5eb2-4057-a638-313896b9796c.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px; border-radius: 10px;">
+        <img src="{{ url_for('static', filename='Business/30b399ff-0e7c-4072-8fb4-345fa4d6f3ac.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='Business/f6e0dd0e-085e-4343-b213-4ac808006327.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='Business/f416c5d0-f391-418f-b4ac-744d56767f4c.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        
+        <p><em>Featured Inspiration</em></p>
+
+    <p>Check out more Old Money styles at:
+        <a href="https://www.kaufmann.dk/what-to-wear/casual-business?SortBy=SortByNewest&price=0%7C500" target="_blank" rel="noopener noreferrer">Kaufmann</a>,
+        <a href="https://www.zalando.dk/alle/culture/?q=business+casual" target="_blank" rel="noopener noreferrer">Zalando</a>,
+        <a href="https://www.express.com/womens-clothing/wear-to-work/business-casual/cat4110001" target="_blank" rel="noopener noreferrer">Express</a>,
+        <a href="https://sandcopenhagen.com/?srsltid=AfmBOopktI02gemo1Ywdeg7W3_64BQ5cGbZJnzzwuzec4N6u_E1HguaI" target="_blank" rel="noopener noreferrer">Sand Copenhagen</a>,
+        <a href="https://linenclothing.dk/collections/old-rich-style?srsltid=AfmBOoq2tPYf4Bd4MNhwoKrFDxs3oVmPb1wo8oXbJIZqs74BcevEEUKy" target="_blank" rel="noopener noreferrer">Linen Clothing</a>,
+        <a href="https://www.uniqlo.com/it/en/special-feature/uniqlo-at-work-women?gad_source=1&gad_campaignid=21816446366&gbraid=0AAAAACzx9D7lJ3fuvED7C1m_re3Dkk1ZN&gclid=CjwKCAjwi-DBBhA5EiwAXOHsGdfW4gd5JBOC-ObNPixXZ3TtCdZgJfUzmQLWdIskzR1GgZtHRuvjVhoCb1IQAvD_BwE&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">Uniqlo</a>,
+        and <a href="https://venderbys.dk/?gad_source=1&gad_campaignid=22179832447&gbraid=0AAAAA-eDtBFRjKuZQ9x6Whn1p1KRk4kCw&gclid=CjwKCAjwi-DBBhA5EiwAXOHsGYDvmdBnmPkqNVW3h0bBhn1BddDcuGK_4iBeAioZAJHDRO07JySwkRoCCOAQAvD_BwE&shpxid=8e1c4d34-3810-4ae0-bdcb-a32ffa285798" target="_blank" rel="noopener noreferrer">Venderbys</a>.
+    </p>
+    <img src="{{ url_for('static', filename='gif/lil debbie cat GIF.gif') }}" alt="A cool GIF" />
+    </div>
+    <div>
+        <audio controls autoplay>
+            <source src="{{ url_for('static', filename='audio/Abba - Money, Money, Money (Official Music Video).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+</body>
+</html

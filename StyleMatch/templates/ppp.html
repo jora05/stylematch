@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Top 10 Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">StyleMatch</div>
+        <div class="nav-links">
+            <a href="/pictures">Home (will reset your choices)</a>
+        </div>
+    </div>
+
+    <h3>{{ name }}, your style is:</h3>
+    <h3>💖 PINK PILATES PRINCESS 💖
+        
+    </h3><!-- Featured image (not part of grid) -->
+    <div style="margin: 30px auto; text-align: center;">
+        <img src="{{ url_for('static', filename='PPP/1b750d61-8822-4cc8-b635-27d871250ec6.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px; border-radius: 10px;">
+        <img src="{{ url_for('static', filename='PPP/4e7e6c06-f961-44ec-a6ab-9a2869c15ef9.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='PPP/45038472-5af0-4c73-8b80-6f809419e15e.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='PPP/43c2763c-f7b1-45f1-a543-2a118c34fa2b.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='PPP/ade9b1e5-5ebb-4530-ab96-3377f4af2176.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        
+        <p><em>Featured Inspiration</em></p>
+
+    <p>Check out more Pink Pilates Princess styles at:
+        <a href="https://exercere.dk/collections/blouses?filter.p.m.custom.product_color=Pink" target="_blank" rel="noopener noreferrer">Exercere</a>,
+        <a href="https://www.amazon.com/pink-pilates-princess/s?k=pink+pilates+princess" target="_blank" rel="noopener noreferrer">Amazon</a>,
+        <a href="https://www.zalando.dk/sportstoej-herrer/_pink/?price_to=452" target="_blank" rel="noopener noreferrer">Zalando</a>,
+        <a href="https://www.hummel.dk/maend/toej/lyseroed?start=0&sz=32" target="_blank" rel="noopener noreferrer">Hummel</a>,
+        and <a href="https://www.sport24.dk/kategori/maend/toj/?slug=maend%2Ctoj&sort=most_popular&filters=targetGroups%3Amen%2CnormalizedColors%3ALyser%C3%B8d&page=1&q=&priceRangeMin=28&priceRangeMax=2400" target="_blank" rel="noopener noreferrer">Sport24</a>.
+    </p>
+    <img src="{{ url_for('static', filename='gif/princess GIF.gif') }}" alt="A cool GIF" />
+    </div>
+    <div>
+        <audio controls autoplay>
+            <source src="{{ url_for('static', filename='audio/Chappell Roan - Pink Pony Club (Official Music Video).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+</body>
+</html>

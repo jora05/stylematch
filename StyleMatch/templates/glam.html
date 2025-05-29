@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Top 10 Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">StyleMatch</div>
+        <div class="nav-links">
+            <a href="/pictures">Home (will reset your choices)</a>
+        </div>
+    </div>
+
+    <h3>{{ name }}, your style is:</h3>
+    <h3>✨ GLAM ✨
+       
+    </h3><!-- Featured image (not part of grid) -->
+    <div style="margin: 30px auto; text-align: center;">
+        <img src="{{ url_for('static', filename='extra_glam/0a8d0072-e8cf-45a4-8222-9ff297d96d03.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px; border-radius: 10px;">
+        <img src="{{ url_for('static', filename='extra_glam/97252326-90ed-4663-90c8-1957974ef288.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='extra_glam/bf026f80-6854-4a05-bdfa-5008472d8da1.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='extra_glam/d44f5484-f22e-403a-93bb-17a7f5092dbd.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='extra_glam/f32ca937-de5b-4fda-914e-420b29dd9e5c.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+       
+        <p><em>Featured Inspiration</em></p>
+
+    <p>Check out more Extra Glam styles at:
+        <a href="https://www.asos.com/dk/asos-luxe/asos-luxe-rynket-jakke-med-flser-og-traddetaljer-i-organza/prd/207857324?affid=29271&_cclid=Google_CjwKCAjwi-DBBhA5EiwAXOHsGct8z1n79saEpB3-glX5ObefU85sMzc2dcyTyUZqXha0dwRD2L2XjRoCzO0QAvD_BwE&channelref=product+search&mk=abc&ppcadref=22291033565%7C%7C&utm_source=google&utm_medium=cpc&utm_campaign=22291033565&utm_content=&utm_term=&gad_source=1&gad_campaignid=22294771636&gbraid=0AAAAADqFjODr4uWAfYLBES7XufSJXFSpZ&gclid=CjwKCAjwi-DBBhA5EiwAXOHsGct8z1n79saEpB3-glX5ObefU85sMzc2dcyTyUZqXha0dwRD2L2XjRoCzO0QAvD_BwE&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">Asos</a>,
+        <a href="https://www.showpo.com/edits/ultra-glam/?srsltid=AfmBOoqrIgnZKT3dRkuM111Ribj9baN_lIWquywAqG8SvYU7xBdzQ3i-" target="_blank" rel="noopener noreferrer">Showpo</a>,
+        <a href="https://glamlaapparel.com/" target="_blank" rel="noopener noreferrer">Glam la apparel</a>,
+        <a href="https://www.boozt.com/dk/da/til-enhver-anledning/dame/festtoej?pricerange=0-200%2C200-300%2C300-500&tag=3267%2C3413%2C3861%2C23412" target="_blank" rel="noopener noreferrer">Boozt</a>,
+        and <a href="https://www.ginatricot.com/dk/toj/festtoj" target="_blank" rel="noopener noreferrer">Gina Tricot</a>.
+    </p>
+    <img src="{{ url_for('static', filename='gif/Nicki Minaj Running GIF.gif') }}" alt="A cool GIF" />
+    </div>
+    <div>
+        <audio controls autoplay>
+            <source src="{{ url_for('static', filename='audio/Britney Spears - Gimme More (Official HD Video).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+</body>
+</html>
+       

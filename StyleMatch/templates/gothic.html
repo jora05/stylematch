@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Top 10 Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">StyleMatch</div>
+        <div class="nav-links">
+            <a href="/pictures">Home (will reset your choices)</a>
+        </div>
+    </div>
+
+    <h3>{{ name }}, your style is:</h3>
+    <h3>🖤🐈‍⬛ GOTHIC 🐈‍⬛🖤
+       
+    </h3><!-- Featured image (not part of grid) -->
+    <div style="margin: 30px auto; text-align: center;">
+        <img src="{{ url_for('static', filename='gothic/32a461fe-83f1-42c4-abd5-ff9ce094b24f.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px; border-radius: 10px;">
+        <img src="{{ url_for('static', filename='gothic/9481cdc1-55e7-4f06-af89-3731e78719d9.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='gothic/de45663a-863b-4845-89ae-d6d2e501fb4d.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='gothic/e59328f6-9e89-45e4-a1e0-55fba332b639.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='gothic/fcdb3d34-d7bf-4f5a-9f0b-9b03dfecd60e.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+       
+        <p><em>Featured Inspiration</em></p>
+
+    <p>Check out more Gothic styles at:
+        <a href="https://eu.killstar.com/?srsltid=AfmBOooy7cEQ4MTDUhPUwVfmThq4NSghKRN2SJQ5Qi5KKsXeL726lYlv" target="_blank" rel="noopener noreferrer">Killstar</a>,
+        <a href="https://www.dollskill.com/collections/mercy-gothic-clothing?srsltid=AfmBOopityO7zFXHnnXxWfBxlN8_Y-Tv-BCQeT-dIPF01RD3RC19cc7a" target="_blank" rel="noopener noreferrer">Dollskill</a>,
+        <a href="https://www.emp-shop.dk/tema/gotisk/" target="_blank" rel="noopener noreferrer">Emp-shop</a>,
+        <a href="https://www.midnighthour.com/en-dk?srsltid=AfmBOoqAAmMQ8dPkwsOXz88AkyOG3A2wccRp-DbhLlTczfVOXIy_g0uw" target="_blank" rel="noopener noreferrer">Midnighthour</a>,
+        and <a href="https://weirdkult.dk/?srsltid=AfmBOool9V2i28gCDpTMK272aikNIJZLxrIESHzgTfYUT0w7NK1DIuFB" target="_blank" rel="noopener noreferrer">Weird Kult</a>.
+    </p>
+    <img src="{{ url_for('static', filename='gif/Rocking Out Heavy Metal GIF.gif') }}" alt="A cool GIF" />
+    </div>
+    <div>
+        <audio controls autoplay>
+            <source src="{{ url_for('static', filename='audio/Papa Roach - Last Resort (Squeaky Clean Version) (Official Music Video).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* General styles */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    color: #000000;
+}
+
+h1 {
+    text-align: left;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(255, 240, 240);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.navbar a {
+    color: rgb(37, 30, 30);
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(190, 151, 151);
+}
+
+.navbar a:hover {
+    background-color: rgb(160, 123, 123);
+    color: rgb(77, 63, 63);
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.navbar .nav-links {
+    display: flex;
+}
+
+/* Pinterest-style image grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.image-item input[type="checkbox"] {
+    display: none;
+}
+
+.image-item img {
+    height: 200px; /* Fixed height */
+    width: auto;   /* Keep aspect ratio */
+    object-fit: cover; /* Crop if necessary to fill */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Highlight when selected */
+.image-item input[type="checkbox"]:checked + img {
+    border:4px solid rgb(255, 186, 186);
+    box-shadow: 0 0 40px rgb(54, 1, 1);
+    filter: brightness(1.2);
+}
+
+/* Submit button */
+button {
+    padding: 10px 25px;
+    font-size: 16px;
+    margin: 20px auto 40px;
+    background-color: rgb(180, 130, 130);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(209, 169, 169);
+}
+

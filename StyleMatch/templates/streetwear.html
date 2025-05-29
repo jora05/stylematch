@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Top 10 Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">StyleMatch</div>
+        <div class="nav-links">
+            <a href="/pictures">Home (will reset your choices)</a>
+        </div>
+    </div>
+
+    <h3>{{ name }}, your style is:</h3>
+    <h3>🛹 STREETWEAR 🛹
+       
+    </h3><!-- Featured image (not part of grid) -->
+    <div style="margin: 30px auto; text-align: center;">
+        <img src="{{ url_for('static', filename='StreetWear/5c8a2d38-9f15-47d9-a428-0873925edf02.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px; border-radius: 10px;">
+        <img src="{{ url_for('static', filename='StreetWear/45ee26b4-01c8-4080-a28e-f7f9a887749a (1).jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='StreetWear/6944f980-e836-41a0-bab9-516985c9c695.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='StreetWear/853817d9-752a-4843-9fdc-7f7aa4d1a802.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='StreetWear/b5126339-42ac-4f3c-89b9-88acad1f0751.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='StreetWear/dcea74ef-0af5-41f9-9dd9-8a59828df467.jpeg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <p><em>Featured Inspiration</em></p>
+
+    <p>Check out more Streetwear styles at:
+        <a href="https://www.aelfriceden.com/?rfsn=8140496.4b98fca&gad_source=1&gad_campaignid=22347630865&gbraid=0AAAAA-4lkUrfsAkcVTsB9ztmurFuAeW4M&gclid=CjwKCAjwi-DBBhA5EiwAXOHsGTgdmOm3_gpm3hdV7d7INmUKkZvs1oF973T3wp5qvpdaCfiMRgQ_-BoCIhIQAvD_BwE" target="_blank" rel="noopener noreferrer">Aelfric Eden</a>,
+        <a href="https://rodekorsgenbrug.dk/?srsltid=AfmBOoqHVdtOt-FjFYw45DHDQ2ln3LjZIcnYrYEbi7m5cr0baX-J0kha" target="_blank" rel="noopener noreferrer">Røde Kors Genbrug</a>,
+        <a href="https://www.zalando.dk/sneaker-tendenser-streetwear-damer/" target="_blank" rel="noopener noreferrer">Zalando</a>,
+        <a href="https://blaakors.dk/genbrug" target="_blank" rel="noopener noreferrer">Blå Kors</a>,
+        <a href="https://www.noedhjaelp.dk/genbrug" target="_blank" rel="noopener noreferrer">Nødhjælp</a>,
+        <a href="https://www.boozt.com/dk/da/toej-til-maend/shop-efter-stil/street?pricerange=0-200%2C200-300%2C300-500" target="_blank" rel="noopener noreferrer">Boozt</a>,
+        <a href="https://vionna-clothing.dk/" target="_blank" rel="noopener noreferrer">Vionna Clothing</a>,
+        <a href="https://woodbird.dk/" target="_blank" rel="noopener noreferrer">Woodbird</a>,
+        and <a href="https://streetwearevolution.dk/" target="_blank" rel="noopener noreferrer">Streetwear Evolution</a>.
+    </p>
+    <img src="{{ url_for('static', filename='gif/Cat Spin GIF by Keanu Movie.gif') }}" alt="A cool GIF" />
+    <img src="{{ url_for('static', filename='gif/Cat Sunglasses GIF.gif') }}" alt="A cool GIF" />
+    </div>
+    <div>
+        <audio controls autoplay>
+            <source src="{{ url_for('static', filename='audio/Avril Lavigne - Sk8er Boi (Official Video).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+</body>
+</html>

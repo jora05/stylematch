@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Top 10 Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">StyleMatch</div>
+        <div class="nav-links">
+            <a href="/pictures">Home (will reset your choices)</a>
+        </div>
+    </div>
+
+    <h3>{{ name }}, your style is:</h3>
+    <h3>🏃🏼‍♀️💨 SPORTY 🏃🏼‍♀️💨
+        
+    </h3><!-- Featured image (not part of grid) -->
+    <div style="margin: 30px auto; text-align: center;">
+        <img src="{{ url_for('static', filename='sporty/Unknown-1.jpg') }}" alt="Featured" style="max-width: 300px; max-height: 300px; border-radius: 10px;">
+        <img src="{{ url_for('static', filename='sporty/Unknown-2.jpg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='sporty/Unknown-5.jpg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        <img src="{{ url_for('static', filename='sporty/Unknown-copy.jpg') }}" alt="Featured" style="max-width: 300px; max-height: 300px;  border-radius: 10px;">
+        
+        <p><em>Featured Inspiration</em></p>
+
+    <p>Check out more sporty styles at:
+        <a href="https://oldnavy.gap.com/browse/now-trending/activewear-for-fam?cid=3028158&mlink=5151,topNav,visnav&nav=meganav%3AActivewear%3A%3A target="_blank" rel="noopener noreferrer">Old Navy</a>,
+        <a href="https://www.uniqlo.com/dk/en/women/sport-utility-wear" target="_blank" rel="noopener noreferrer">Uniqlo</a>,
+        <a href="https://yeahiworkout.com/" target="_blank" rel="noopener noreferrer">Yeah I workout</a>,
+        <a href="https://teveo.com/en-dk" target="_blank" rel="noopener noreferrer">Teveo</a>,
+        <a href="https://www.myprotein.dk/" target="_blank" rel="noopener noreferrer">My protein</a>,
+        <a href="https://www.zalando.dk/sports-damer-home/" target="_blank" rel="noopener noreferrer">Zalando</a>,
+        and <a href="https://www.pursuefitness.com/collections/affordable-gym-wear?country=DK" target="_blank" rel="noopener noreferrer">Pursue Fitness</a>.
+    </p>
+    <img src="{{ url_for('static', filename='gif/Dance Fail GIF by Piñata Farms.gif') }}" alt="A cool GIF" />
+    </div>
+    <div>
+        <audio controls autoplay>
+            <source src="{{ url_for('static', filename='audio/Naughty Boy ft. Beyoncé, Arrow Benjamin - Running (Lose It All).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+</body>
+</html>
