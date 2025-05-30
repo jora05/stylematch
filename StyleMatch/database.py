@@ -17,7 +17,7 @@ def init_db():
     conn = db_connection()
     cur = conn.cursor()
 
-    with open ('stylematch.sql') as db_file:
+    with open ('stylematch.sql', encoding='utf-8') as db_file:
         cur.execute(db_file.read())
         
     conn.commit()
