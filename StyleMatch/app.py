@@ -63,8 +63,8 @@ def index():
 def submit_selection():
     given_name = session.get('user_name', 'Guest')
     selected_images = request.form.getlist('selected_images')
-    if len(selected_images) > 10:
-        return "<h2>Error: You can only select up to 10 images.</h2><a href='/'>Go Back</a>"
+    if len(selected_images) > 10 or len(selected_images)<1:
+        return "<h2>Error: You must select at least one picture.</h2><a href='/'>Go Back</a>"
     image_names = image_list()
     style = choose_style(image_names)
     return render_template(style[0] + '.html', name=given_name)
