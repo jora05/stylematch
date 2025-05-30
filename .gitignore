@@ -1,1 +1,5 @@
 .DS_Store
+
+# Ignore macOS and Python cache files
+.DS_Store
+__pycache__/
