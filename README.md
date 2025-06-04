@@ -28,10 +28,10 @@ StyleMatch is a web app that analyses a user's fashion style based on the images
 
 ## Tech Stack
 
-- Python 3.13
+- Python 
 - Flask
 - PostgreSQL
-- HTML5/CSS3
+- HTML/CSS
 
 ---
 
