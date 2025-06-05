@@ -9,8 +9,9 @@ StyleMatch is a web app that analyses a user's fashion style based on the images
 - `app.py` - Main Flask app handling routing, session management, and logic.
 - `database.py` - Manages PostgreSQL database connection and initialization.
 - `stylematch.sql` - SQL initialization script that creates required tables:
-  - `matches(photo_id, style_id)`
+  - `photos(photo_id, photo_name, photo_url)`
   - `styles(style_id, style_name)`
+  - `matches(photo_id, style_id)`
   - `collected(photo_id, style_id)`
 
 - `templates/` - HTML templates:
@@ -55,16 +56,19 @@ StyleMatch is a web app that analyses a user's fashion style based on the images
 
 
 ## How to run
-
+- Open a terminal and navigate to the StyleMatch directory
 - From the terminal, run:
   ```bash
   python app.py
+  ```
+  This will compile and run the web-app (e.g. initialize the database and so on)
 - Then open a browser and go to:
   ```Cpp
   http://127.0.0.1:5000
-1. Enter your name to begin.
-2. Select 1–10 fashion images from the grid.
-3. Receive a personalised style page based on your choices.
+- Now you can interact with the web-app like so:
+  1. Enter your name to begin.
+  2. Select 1–10 fashion images from the grid.
+  3. Receive a personalised style page based on your choices.
 
 
 
