@@ -38,6 +38,9 @@ StyleMatch is a web app that analyses a user's fashion style based on the images
 
 ## E/R Diagram
 
+![ER_diagram](https://github.com/user-attachments/assets/6641b92d-cacb-47bc-bfbe-2b2a289604e8)
+
+
 ## How to Compile
 1. Create and activate a virtual environment:
    ```bash
