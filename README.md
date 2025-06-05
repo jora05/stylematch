@@ -1,6 +1,6 @@
 # StyleMatch
 
-StyleMatch is a web app that analyses a user's fashion style based on the images they select. 
+StyleMatch is a web app that analyses a user's fashion style based on the images they select.  
 
 ---
 
